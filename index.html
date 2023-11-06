@@ -44,7 +44,7 @@
                 <li>Lichi</li>
                 </ul>
             </section>
-        <section>
+        <section id="places-container" class="large-text">
           <h1 id="places-title">Places i like to visit</h1> 
           <ul>
             <li class="important-places">Sundarban</li>
@@ -55,17 +55,18 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
+    <script src="js/styleInJs.js"></script>
     <script>
       const liCollection = document.getElementsByTagName('li');
     //   console.log(liCollection);
     for(const li of liCollection){
-        console.log(li.innerText);
+        // console.log(li.innerText);
     }
 
     //option 1-- getElementsByTagName
     const allHeadings = document.getElementsByTagName('h1');
     for(const h1 of allHeadings){
-        console.log(h1.innerText);
+        // console.log(h1.innerText);
     }
 
     // option2--getElementById
@@ -75,7 +76,7 @@
     //option3--getElementByClassName
     const places = document.getElementsByClassName('important-places');
     for(const place of places){
-        console.log(place.innerText);
+        // console.log(place.innerText);
     }
     
     //option4---querySelector
@@ -83,7 +84,7 @@
     const someLi = document.querySelectorAll('.fruits-container li');
     // console.log(someLi);
     for(const li of someLi){
-        console.log(li.innerText);
+        // console.log(li.innerText);
     }
     
 
